@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="Submission" content="/tmp/codecheck/18030901354316136634942302466"/>
+<meta name="Level" content="1"/>
+<meta name="Time" content="2018-03-09T01:35:12Z"/>
+<meta name="ID" content="Book"/>
+<meta name="User" content="18030423199gto2czohca2ypawgy2uthfvd"/>
+<meta name="Problem" content="ext/17093021036ojjx46vmor05k6wbx2y3qnn"/>
+<meta name="Elapsed" content="2653 ms"/>
+<style type="text/css">
+.header {font-weight: bold; font-size: 1.2em; }
+.item {font-weight: bold;}
+.pass {color: green;}
+.fail {color: red;}
+.note {color: blue; font-weight: bold;}
+table.file td {padding-right: 1em; background: #FFF; }
+.linenumber {color: gray;}
+.footnote {font-size: 0.7em;}
+table {font-size: 0.9em;}
+td, th { background: #EEE; margin: 0.5em; padding: 0.25em;}
+table.output td {vertical-align: top;}
+div.footnotes { border-top: 1px solid gray; padding-top: 0.5em; }
+</style>
+<title>Report</title>
+</head>
+<body>
+<p class="header run">Testing BookApp.cpp</p>
+<div class="run">
+<p class="caption">Error:</p>
+<pre class="output">/tmp/codecheck/18030901354316136634942302466/BookApp.cpp: In function ‘int main()’:
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:56:38: error: invalid operands of types ‘&lt;unresolved overloaded function type&gt;’ and ‘int’ to binary ‘operator+’
+       catalog.insert(catalog.begin + count, b1) 
+                                      ^
+In file included from /tmp/codecheck/18030901354316136634942302466/BookApp.cpp:1:0:
+/tmp/codecheck/18030901354316136634942302466/Book.h:44:9: error: ‘std::__cxx11::string Book::isbn’ is private
+  string isbn;
+         ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:60:30: error: within this context
+             key = catalog[i].isbn;
+                              ^
+In file included from /tmp/codecheck/18030901354316136634942302466/BookApp.cpp:1:0:
+/tmp/codecheck/18030901354316136634942302466/Book.h:44:9: error: ‘std::__cxx11::string Book::isbn’ is private
+  string isbn;
+         ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:64:38: error: within this context
+          while (j &gt;= 0 &amp;&amp; catalog[j].isbn &gt; key)
+                                      ^
+In file included from /tmp/codecheck/18030901354316136634942302466/BookApp.cpp:1:0:
+/tmp/codecheck/18030901354316136634942302466/Book.h:44:9: error: ‘std::__cxx11::string Book::isbn’ is private
+  string isbn;
+         ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:66:26: error: within this context
+             catalog[j+1].isbn = catalog[j].isbn;
+                          ^
+In file included from /tmp/codecheck/18030901354316136634942302466/BookApp.cpp:1:0:
+/tmp/codecheck/18030901354316136634942302466/Book.h:44:9: error: ‘std::__cxx11::string Book::isbn’ is private
+  string isbn;
+         ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:66:44: error: within this context
+             catalog[j+1].isbn = catalog[j].isbn;
+                                            ^
+In file included from /tmp/codecheck/18030901354316136634942302466/BookApp.cpp:1:0:
+/tmp/codecheck/18030901354316136634942302466/Book.h:44:9: error: ‘std::__cxx11::string Book::isbn’ is private
+  string isbn;
+         ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:70:24: error: within this context
+           catalog[j+1].isbn = key;
+                        ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:82:10: error: break statement not within loop or switch
+          break;
+          ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:89:28: error: expected primary-expression before ‘)’ token
+        getline(input,check,);
+                            ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:101:44: error: ‘linearSearchauthor’ was not declared in this scope
+           linearSearchauthor(author,catalog);
+                                            ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:106:48: error: ‘linearSearchcategory’ was not declared in this scope
+           linearSearchcategory(category,catalog);
+                                                ^
+In file included from /tmp/codecheck/18030901354316136634942302466/BookApp.cpp:1:0:
+/tmp/codecheck/18030901354316136634942302466/Book.h: In function ‘int find(std::__cxx11::string, const std::vector&lt;Book&gt;&amp;)’:
+/tmp/codecheck/18030901354316136634942302466/Book.h:44:9: error: ‘std::__cxx11::string Book::isbn’ is private
+  string isbn;
+         ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:151:28: error: within this context
+       if(isbn&gt;catalog[mid].isbn){
+                            ^
+In file included from /tmp/codecheck/18030901354316136634942302466/BookApp.cpp:1:0:
+/tmp/codecheck/18030901354316136634942302466/Book.h:44:9: error: ‘std::__cxx11::string Book::isbn’ is private
+  string isbn;
+         ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:153:34: error: within this context
+       }else if(isbn&lt;catalog[mid].isbn){
+                                  ^
+In file included from /tmp/codecheck/18030901354316136634942302466/BookApp.cpp:1:0:
+/tmp/codecheck/18030901354316136634942302466/Book.h:44:9: error: ‘std::__cxx11::string Book::isbn’ is private
+  string isbn;
+         ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:155:35: error: within this context
+       }else if(isbn==catalog[mid].isbn){
+                                   ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:163:1: error: a function-definition is not allowed here before ‘{’ token
+ {
+ ^
+/tmp/codecheck/18030901354316136634942302466/BookApp.cpp:196:1: error: expected ‘}’ at end of input
+ }
+ ^
+/tmp/codecheck/18030901354316136634942302466/Book.cpp:5:16: fatal error: stdio: No such file or directory
+compilation terminated.
+</pre>
+</div>
+<p class="header studentFiles">Student files</p>
+<div class="studentFiles">
+<p class="caption">Book.cpp:</p>
+<pre>#include "Book.h"
+#include &lt;vector&gt;
+#include&lt;iostream&gt;
+#include&lt;iomanip&gt;
+#include&lt;stdio&gt;
+#include&lt;string&gt;
+
+using namespace std;
+
+//Default constructor
+Book::Book() {
+    isbn="";
+    last="";
+    first="";
+    title="";
+	category = Category::NONE;
+}
+;
+//Parameterized constructor
+Book::Book(string isbn, string last, string first, string title,
+		Category category) :
+ {
+					
+   isbn=isbn;
+   last=last;
+   first=first;
+   title=title;
+   category=category;
+}
+
+//Destructor
+Book::~Book() {
+}
+
+
+// getter functions
+string Book::get_isbn() const {
+	return isbn;
+}
+
+string Book::get_first() const {
+	return first;
+}
+
+string Book::get_last() const {
+	return last;
+}
+
+string Book::get_title() const {
+	return title;
+}
+
+string Book::get_category() const {
+
+	if (category == Book::Category::FICTION) {
+		return "fiction";
+	} else if (category == Book::Category::HISTORY) {
+		return "history";
+	} else if (category == Book::Category::TECHNICAL) {
+		return "technical";
+	} else (category == Book::Category::NONE) {
+		return "none";
+	} 
+}
+
+// Output operator overloading
+
+ostream&amp; operator &lt;&lt;(ostream&amp; outs, const Book&amp; B1) {
+
+output&lt;&lt;"Book{ISBN="&lt;&lt;b.isbn&lt;&lt;", last="&lt;&lt;b.last
+  &lt;&lt;", first="&lt;&lt;b.first&lt;&lt;", title="&lt;&lt;b.title
+&lt;&lt;", category="&lt;&lt;b.category&lt;&lt;"}";
+
+   return output;
+}
+
+//input operator overloading
+istream&amp; operator &gt;&gt;(istream&amp; ins, Book&amp; B1) {
+string cat;
+   input.get();
+   getline(input,b.isbn,',');
+   getline(input,b.last,',');
+   getline(input,b.first,',');
+   getline(input,b.title,',');
+   getline(input,cat);
+   
+   switch(cat)
+   {
+      case "fiction":b.category=Book::Category::FICTION;break;
+      case "history":b.category=Book::Category::HISTORY;break;
+      case "technical":b.category=Book::Category::TECHNICAL;break;
+      default:b.category=Book::Category::NONE;
+   }
+   
+
+   return input;
+}
+</pre>
+<p class="caption">Book.h:</p>
+<pre>#ifndef BOOK_H_
+#define BOOK_H_
+
+#include &lt;string&gt;
+using namespace std;
+
+// The Book class.
+
+class Book {
+public:
+
+	//Book categories.
+	enum class Category {
+		FICTION, HISTORY, TECHNICAL, NONE
+	};
+
+// Default constructor.
+	Book();
+
+	//Constructor
+	Book(string isbn, string last, string first, string title,
+			Category category);
+
+
+	//Destructor
+	~Book();
+
+	//member functions
+	Book&amp; operator=(const Book&amp; other);
+    string get_isbn();
+    string get_last();
+    string get_first();
+    string get_title();
+    Category get_category();
+
+	// Operaor Overloading functions
+//	friend Category get_category(string cat_str);
+    friend istream&amp; operator&gt;&gt;(istream&amp; inp, Book&amp; b);
+    friend ostream&amp; operator&lt;&lt;(ostream&amp; out, Book&amp; b);
+
+	//Private members
+private:
+
+	string isbn;
+	string last;
+	string first;
+	string title;
+	Category category;
+
+};
+
+#endif /* EMPLOYEE_H_ */
+</pre>
+<p class="caption">BookApp.cpp:</p>
+<pre>#include "Book.h"
+#include &lt;vector&gt;
+#include&lt;iostream&gt;
+#include&lt;fstream&gt;
+#include&lt;string&gt;
+#include&lt;iomanip&gt;
+
+/***** Complete this file. *****/
+
+using namespace std;
+
+// Status codes.
+enum class StatusCode {OK, DUPLICATE, NOT_FOUND, INVALID_COMMAND};
+
+/**
+ * Find the book in the catalog with the given ISBN.
+ * Use a binary search.
+ * @param isbn the ISBN.
+ * @param catalog the vector of book records.
+ * @return the vector index of the book if found, else return -1.
+ */
+int find(const string isbn, const vector&lt;Book&gt;&amp; catalog);
+void searchAuthor(const string author,const vector&lt;Book&gt;&amp; catalog);
+void searchCategory(const string category,const vector&lt;Book&gt;&amp; catalog);
+
+const string INPUT_FILE_NAME = "commands.in";
+
+/**
+ * The main. Open the command input file and loop to process commands.
+ */
+int main()
+{
+    // Open the input file.
+    ifstream input;
+    input.open(INPUT_FILE_NAME);
+    if (input.fail())
+    {
+        cout &lt;&lt; "Failed to open " &lt;&lt; INPUT_FILE_NAME &lt;&lt; endl;
+        return -1;
+    }
+
+    vector&lt;Book&gt; catalog;  // book catalog
+    
+    Book b1;              //Object to store attributes
+    string temp;
+    string delete_book;
+    int index=0;
+    char command;
+     int i, j;
+     string key;
+    int count=0;
+    input &gt;&gt; command;  // read the first command
+    if(command=='+')
+    {
+      input&gt;&gt;b1;
+      catalog.insert(catalog.begin + count, b1) 
+      string isbn=b1.get_isbn();
+         for (i = 1; i &lt;= catalog.size(); i++)
+         {
+            key = catalog[i].isbn;
+            j = i-1;
+ 
+         
+         while (j &gt;= 0 &amp;&amp; catalog[j].isbn &gt; key)
+         {
+            catalog[j+1].isbn = catalog[j].isbn;
+            j = j-1;
+          }
+          
+          catalog[j+1].isbn = key;
+         }
+    }
+    else if(command=='-')
+    {
+      getline(input,delete_book,'\n');
+      index=find(delete_book,catalog);
+      
+      if(index&lt;1)
+      {
+         cout&lt;&lt;"Book Not Found!";
+      
+         break;
+      }
+      catalog.erase(catalog.begin() + index);
+    }
+    else if(command=='?')
+    {
+       string check;
+       getline(input,check,);
+    
+       string isbn="";
+       string author="";
+       string category="";
+       int index_isbn=0;
+       int index_author=0;
+       int index_category=0;
+       
+       if(check==" author"){
+          
+          getline(input,author,'\n');
+          linearSearchauthor(author,catalog);
+          
+       }else if(check==" category"){
+          
+          getline(input,category,'\n');
+          linearSearchcategory(category,catalog);
+          
+       }else if(check==" isbn"){
+          
+          getline(input,isbn,'\n');
+          index_isbn=find(isbn,catalog);
+          cout&lt;&lt;catalog[index_isbn];
+          
+       }else{
+          
+          for(int i=0; i&lt;catalog.size(); i++){
+             
+             cout&lt;&lt;catalog[i];
+             
+          }
+          
+       }
+    }
+    else
+    {
+      cout&lt;&lt;"Invalid Command"&lt;&lt;endl;   
+    }
+    /**
+     * Loop to read commands until the end of file.
+     */
+    while (!input.fail())
+    {
+        cout &lt;&lt; endl &lt;&lt; command &lt;&lt; " ";
+
+        /*** Complete this main. *****/
+    }
+
+    return 0;
+}
+
+int find(const string isbn, const vector&lt;Book&gt;&amp; catalog)
+{
+   int high=catalog.size()-1;
+   int low=0;
+   int mid=0;
+   
+   while(high&gt;low)
+   {
+      
+      mid=(high+low)/2;
+      if(isbn&gt;catalog[mid].isbn){
+         low=mid+1;
+      }else if(isbn&lt;catalog[mid].isbn){
+         high=mid-1;
+      }else if(isbn==catalog[mid].isbn){
+         return mid;
+      }
+   
+      return -1;
+   }
+ 
+void searchAuthor(const string author,const vector&lt;Book&gt;&amp; catalog)
+{
+   int i=0;
+   int count=0;
+   while(i&lt;catalog.size())
+     {
+        if(author==catalog[i].author)
+        {
+           cout&lt;&lt;catalog[i];
+           count++;
+        }
+        i++;
+     }
+   if(count==0){
+      cout&lt;&lt;"No book found with this author!";
+   }
+}
+void searchCategory(const string category,const vector&lt;Book&gt;&amp; catalog)
+{
+   int i=0;
+   while(i&lt;catalog.size())
+     {
+        if(category==catalog[i].category)
+        {
+           cout&lt;&lt;catalog[i];
+           count++;
+        }
+        i++;
+     }
+   if(count==0){
+      cout&lt;&lt;"No book found with this category!";
+   }
+}
+   
+}
+</pre>
+</div>
+<p class="header providedFiles">Provided files</p>
+<div class="providedFiles">
+<p class="caption">commands.in:</p>
+<pre>+ 978-0130460417,Mak,Ronald,Java Number Cruncher,technical
++ 978-1501163401,King,Stephen,Sleeping Beauties,fiction
++ 978-0470383285,Horstmann,Cay,Big C++,technical
++ 978-0470177075,Mak,Ronald,Writing Compilers,technical
++ 978-0471744870,Horstmann,Cay,Object-Oriented Design,technical
++ 978-1439156810,King,Stephen,On Writing - A Memoir of the Craft,history
+?
+? author=Mak
+? category=technical
+? category=fiction
+? isbn=978-0470383285
++ 978-0470177075,Mak,Ronald,Writing Compilers,technical
+? category=history
+? author=King
+? isbn=978-0470385285
+? author=Horstmann
+- 978-0130460417
+$ 978-1439156810
+- 978-0471744870
+- 978-1439156811
+?
+</pre>
+</div>
+<p class="header score">Score</p>
+<div class="score">
+<p class="score">0</p>
+</div>
+<div class="footnotes"><div class="footnote">2018-03-09T01:35:12Z</div>
+</div>
+</body></html>
